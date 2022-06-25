@@ -1,0 +1,25 @@
+@model project.Models.Item
+
+<div class="mt-3">
+<div class="row">
+   <div class="col-12">
+
+    <h2>Edit Item</h2>
+   </div>
+
+
+</div>
+
+<form method="post">
+  <input asp-for="Id" hidden>
+  <div class="mb-3">
+    <label asp-for="Name"></label>
+    <input asp-for="Name" type="text" class="form-control">
+  <span asp-validation-for="Name" class="text-danger"></span>
+  </div>
+  
+ 
+  <button type="submit" class="btn btn-primary">Update</button>
+  <a asp-action="Index" class="btn btn-success">Back</a>
+</form>
+</div>
